@@ -1,0 +1,43 @@
+/* Tailwind v4: cukup import ini saja */
+@import "tailwindcss";
+
+/* ========== Base reset ringan ========== */
+:root {
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root { color-scheme: dark; }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* Pastikan font smoothing rapi */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Warna dasar aman untuk light/dark (ikut color-scheme) */
+  background: Canvas;
+  color: CanvasText;
+}
+
+/* Media default responsif */
+img, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Link default */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Scroll-behavior halus */
+html { scroll-behavior: smooth; }
